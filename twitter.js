@@ -17,6 +17,6 @@ http.get('https://twitter.com/podentender')
   const following = toInt($('a[data-nav="following"] [data-count]'))
   const date = moment().format('YYYY-MM-DD');
 
-  console.log(`"Twitter;"${date}","${followers}";"${following}";"${tweets}"`);
+  console.log(`"Twitter";"${date}","${followers}";"${following}";"${tweets}"`);
 });
 
