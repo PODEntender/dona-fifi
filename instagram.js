@@ -20,5 +20,5 @@ http.get('https://instagram.com/podentender')
   const user = window._sharedData.entry_data.ProfilePage[0].graphql.user;
 
   const date = moment().format('YYYY-MM-DD');
-  console.log(`"Instagram";"${date}";"${user.edge_followed_by.count}";"${user.edge_follow.count}";"${user.edge_owner_to_timeline_media.count}"`);
+  console.log(`"Instagram","${date}","${user.edge_followed_by.count}","${user.edge_follow.count}","${user.edge_owner_to_timeline_media.count}"`);
 });
