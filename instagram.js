@@ -21,6 +21,10 @@ http.get('https://instagram.com/podentender')
 
   const date = moment().format('YYYY-MM-DD');
   console.log(
-    `"Instagram";"${date}";"${user.edge_followed_by.count}";"${user.edge_follow.count}";"${user.edge_owner_to_timeline_media.count}"`
+    '"Instagram";'
+    + '"' + date + '";'
+    + '"' + user.edge_followed_by.count + '";'
+    + '"' + user.edge_follow.count + '";'
+    + '"' + user.edge_owner_to_timeline_media.count + '"'
   );
 });
