@@ -7,10 +7,10 @@ const http = axios.create({
 });
 
 http.get('https://instagram.com/podentender')
-.then((res) => {
+.then(function (res) {
   const $ = require('cheerio').load(res.data);
   const script = $('script[type="text/javascript"]:not([src])')
-    .filter((idx, element) => {
+    .filter(function (idx, element) {
       return element.children[0].data.indexOf('window._sharedData') > -1;
     });
 
@@ -22,5 +22,5 @@ http.get('https://instagram.com/podentender')
   const date = moment().format('YYYY-MM-DD');
   console.log(
     `"Instagram";"${date}";"${user.edge_followed_by.count}";"${user.edge_follow.count}";"${user.edge_owner_to_timeline_media.count}"`
-  )
-})
+  );
+});
