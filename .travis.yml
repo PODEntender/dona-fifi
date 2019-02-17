@@ -1,0 +1,16 @@
+language: node_js
+cache:
+  directories:
+    - node_modules
+before_install:
+  - git pull
+install:
+  - npm install
+script:
+  - run.sh
+after_success:
+  - git config user.email "fifi@podentender.com"
+  - git config user.name "Dona Fifi"
+  - git add aggregated.csv
+  - git commit -m "Miniiino, deixa eu te falar!"
+  - git push https://nawarian:${GITHUB_API_KEY}@${GH_REF} HEAD:master

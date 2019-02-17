@@ -1,0 +1,24 @@
+{
+  "name": "dona-fifi",
+  "version": "1.0.0",
+  "description": "Robô fofoqueiro do PODEntender que analisa e reporta o relacionamento social",
+  "main": "instagram.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "podentender",
+    "fofoca",
+    "fifi",
+    "instagram",
+    "facebook",
+    "twitter"
+  ],
+  "author": "Nawarian <nickolas@phpsp.org.br>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "moment": "^2.24.0"
+  }
+}
